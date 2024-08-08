@@ -1,0 +1,19 @@
+<template lang="">
+    <div>
+        <header>
+            <nav>
+                <div class="space-x-6">
+                    <Link :href="route('home')" class="nav-link">
+                        Home</Link>
+
+                    <Link :href="route('register')" class="nav-link">
+                        Register</Link>
+                </div>
+            </nav>
+        </header>
+
+        <main class="p4">
+            <slot />
+        </main>
+    </div>
+</template>
